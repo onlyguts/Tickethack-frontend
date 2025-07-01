@@ -14,7 +14,7 @@
 .nav {
     display: flex;
     justify-content: space-between;
-      padding: 15px;
+    padding: 15px;
     background-color: white;
 
 }
@@ -82,12 +82,12 @@
 
 
 .main ul li {
-display: flex;
-justify-content: space-between;
-background-color: #f5eeee;
-padding: 15px;
-margin: 50px 75px;
-border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5eeee;
+    padding: 15px;
+    margin: 50px 75px;
+    border-radius: 5px;
 
 }
 
@@ -95,11 +95,10 @@ border-radius: 5px;
     padding: 10px;
     background-color: #459e85;
     outline: none;
-
     border: none;
     color: white;
     border-radius: 5px;
-      cursor: pointer;
+    cursor: pointer;
 }
 
 
@@ -111,13 +110,12 @@ border-radius: 5px;
 }
 
 .enjoytravel p {
-font-size: 20px;
-color: #459e85;
+    font-size: 20px;
+    color: #459e85;
 }
 
 .border {
     margin: 40px auto;
-    border-top: black 2px solid ;
+    border-top: black 2px solid;
     width: 350px;
 }
-
