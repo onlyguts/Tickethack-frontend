@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    height: 100vh;
+
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+}
+
+.left-nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-nav p {
+    margin-left: 50px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.left-nav p:hover {
+    color: #459e85;
+    cursor: pointer;
+}
+
+.title {
+    color: #459e85;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px;
+    color: white;
+    gap: 20px;
+
+}
+
+.main-title h1 {
+    font-size: 45px;
+}
+
+.main-title p {
+    font-size: 25px;
+}
+
+.main-block {
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+
+
+}
+
+.main-block .search,
+.main-block .result {
+    margin: 50px 65px;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main-block .search {
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-block .search div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-block .search .date {
+    margin-top: 15px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #eff2f1;
+    outline: none;
+    padding: 5px;
+
+    border: none;
+}
+
+.main-block .search .text1,
+.main-block .search .text {
+    padding: 5px;
+    width: 320px;
+    height: 40px;
+    background-color: #eff2f1;
+    outline: none;
+
+    border: none;
+    border-radius: 5px;
+}
+
+.main-block .search .text1 {
+    border-bottom: black 1px solid;
+}
+
+
+.btn-search {
+    background-color: #459e85;
+    color: white;
+    width: 320px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-search:hover {
+    cursor: pointer;
+}
+
+.main-block .result {
+    background-color: white;
+
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+}
+
+.result img {
+
+    width: 50%;
+    padding: 25px;
+}
+
+.result p {
+    padding: 25px;
+    border-top: #459e85 solid 3px;
+}
