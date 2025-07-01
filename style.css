@@ -14,8 +14,9 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px;
     background-color: white;
+
 }
 
 .left-nav {
@@ -29,14 +30,21 @@
     margin-left: 50px;
     padding-right: 20px;
     font-size: 20px;
+
 }
 
-.left-nav p:hover {
+.left-nav p a {
+color: black;
+    text-decoration: none;
+}
+
+.left-nav p a:hover {
     color: #459e85;
     cursor: pointer;
 }
 
-.title {
+.title a {
+    text-decoration: none;
     color: #459e85;
 }
 
@@ -59,11 +67,11 @@
 }
 
 .main-title h1 {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .main-title p {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .main-block {
@@ -76,11 +84,11 @@
 
 .main-block .search,
 .main-block .result {
-    margin: 50px 65px;
+    margin: 50px 125px;
     display: flex;
     flex-direction: column;
-    height: 40vh;
-    width: 350px;
+    height: 50vh;
+    width: 380px;
     padding: 20px;
     border-radius: 10px;
 }
@@ -102,15 +110,15 @@
     border-radius: 5px;
     background-color: #eff2f1;
     outline: none;
-    padding: 5px;
-
+    
     border: none;
+    padding: 5px;
 }
 
 .main-block .search .text1,
 .main-block .search .text {
     padding: 5px;
-    width: 320px;
+    width: 350px;
     height: 40px;
     background-color: #eff2f1;
     outline: none;
@@ -127,7 +135,7 @@
 .btn-search {
     background-color: #459e85;
     color: white;
-    width: 320px;
+    width: 350px;
     height: 45px;
     outline: none;
     border: none;
@@ -161,4 +169,36 @@
 .result p {
     padding: 25px;
     border-top: #459e85 solid 3px;
+}
+
+.result-list ul li {
+    text-decoration: none;
+    list-style: none;
+    background-color: #f5eeee;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    
+}
+
+.result-list ul li button {
+ padding: 10px;
+ background-color: #459e85;
+         outline: none;
+    
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.result-list {
+    width: 100%;
+ overflow-y: scroll;
+
 }
