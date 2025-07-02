@@ -37,6 +37,7 @@ document.querySelector('.btn-search').addEventListener('click', function () {
         .then(data => {
             console.log(data.result)
             if (data.result === true) {
+                   document.querySelector('.result-lists').innerHTML = ''
                 const travel = data.travel
                 for (let i = 0; i < travel.length; i++) {
                     console.log(travel[i])
