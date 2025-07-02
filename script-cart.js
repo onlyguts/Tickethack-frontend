@@ -14,7 +14,6 @@ function formatDate(param) {
     return hours + "h" + minutes
 }
 
-
 function apiCart() {
     fetch(`http://localhost:3000/cart/all`)
         .then(response => response.json())
@@ -32,7 +31,6 @@ function apiCart() {
                             <button class='delete-cart' id=${cart[i]._id}>X</button>
                         </li>
                 `
-
                 }
             } else {
                 document.querySelector('.nobooking').style.display = 'block'
@@ -47,12 +45,9 @@ function apiCart() {
 document.addEventListener('click', function (e) {
     if (e.target && e.target.classList.contains('delete-cart')) {
 
-        console.log(document.querySelector('.delete-cart').getAttribute('id'))
         fetch(`http://localhost:3000/cart/delete/${document.querySelector('.delete-cart').getAttribute('id')}`, {
             method: 'DELETE',
             headers: { 'Content-Type': 'application/json' },
-
-
         })
             .then(response => response.json())
             .then(data => {
@@ -60,7 +55,6 @@ document.addEventListener('click', function (e) {
                 apiCart()
             });
     }
-
 })
 
 
